@@ -1,0 +1,8 @@
+<plugin name='foundation' version='0.1' grailsVersion='2.5 &gt; *'>
+  <author>Geckotech</author>
+  <title>Foundation for Sites Plugin</title>
+  <description>Foundation for Sites assets</description>
+  <documentation>http://grails.org/plugin/foundation-sites</documentation>
+  <type>FoundationGrailsPlugin</type>
+  <resources />
+</plugin>

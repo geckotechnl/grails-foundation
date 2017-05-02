@@ -12,9 +12,14 @@
     <asset:javascript src="vendor/jquery/dist/jquery.min.js"/>
     <asset:javascript src="vendor/what-input/dist/what-input.min.js"/>
     <asset:javascript src="vendor/foundation-sites/dist/js/foundation.min.js"/>
+    <asset:stylesheet src="vendor/motion-ui/dist/motion-ui.min.css"/>
+    <asset:javascript src="vendor/motion-ui/dist/motion-ui.min.js"/>
     <g:layoutHead/>
 </head>
 <body>
 <g:layoutBody/>
+<script>
+    $(document).foundation();
+</script>
 </body>
 </html>

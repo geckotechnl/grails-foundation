@@ -3,6 +3,7 @@
 <head>
     <title>Test Foundation</title>
     <meta name="layout" content="foundation">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 
 <body>
@@ -10,6 +11,7 @@
 <div class="row">
     <div class="large-12 columns">
         <h1>Some Foundation components to test</h1>
+
         <p>Below are some Foundation components from the docs to test if the framework is working correctly.</p>
     </div>
 </div>
@@ -195,9 +197,25 @@
         </div>
     </div>
 
-    <script>
-        $(document).foundation();
-    </script>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="wow slide-in-right mui-enter" data-wow-delay="2s">
+            <h1>Swoosh!</h1>
+            <p>I am sliding in here, with a WOW effect.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'mui-enter-active'
+        }).init();
+    })();
+</script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-# grails-foundation
+# Grails foundation-sites plugin
 Foundation for Sites for Grails projects
 
 Include [ZURB Foundation for Sites](http://foundation.zurb.com/) and [Motion UI](http://zurb.com/playground/motion-ui) in a Grails 2.x project, directly usable with the ```sass-asset-pipeline``` plugin.

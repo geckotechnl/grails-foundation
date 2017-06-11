@@ -36,7 +36,8 @@ class FoundationSitesGrailsPlugin {
     def author = "Geckotech"
     def authorEmail = "info@geckotech.nl"
     def description = '''\
-Foundation for Sites assets
+<p>The Foundation for Sites plugin contains all the assets for ZURB's Foundation for Sites. It is compatible with the asset pipeline.</p>
+<p>Please check the documentation for further usage instructions.</p>
 '''
 
     // URL to the plugin's documentation

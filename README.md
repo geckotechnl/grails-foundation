@@ -10,9 +10,7 @@ Foundation 6 supports the latest ```sass-asset-pipeline``` based on jsass, but i
 
 ## Installation
 
-*This plugin is pending approval for the Grails Plugin repository.*
-
-When it is approved, it can be installed by adding the plugin to ```BuildConfig.groovy```:
+Install by adding the plugin to ```BuildConfig.groovy```:
 
 ```groovy
 plugins {
@@ -24,6 +22,7 @@ plugins {
 
 ## Usage
 
+### Foundation template
 The plugin includes a ```foundation``` template which includes all dependencies on Foundation.
 
 ```html
@@ -32,6 +31,30 @@ The plugin includes a ```foundation``` template which includes all dependencies 
 
 If you want to use the default Foundation styling, this is all you need. By default all components are included.
 For Motion UI the [default CSS](https://github.com/zurb/motion-ui/blob/master/docs/classes.md) and JavaScript is included.
+
+### Manual include
+
+If you do not wish to include everything, you can include parts of the plugin manually:
+
+```
+<asset:stylesheet src="vendor/foundation-sites/assets/foundation.css"/>
+<asset:javascript src="vendor/jquery/dist/jquery.min.js"/>
+<asset:javascript src="vendor/what-input/dist/what-input.min.js"/>
+<asset:javascript src="vendor/foundation-sites/dist/js/foundation.min.js"/>
+<asset:stylesheet src="vendor/motion-ui/dist/motion-ui.min.css"/>
+<asset:javascript src="vendor/motion-ui/dist/motion-ui.min.js"/>
+```
+
+If you use the JavaScript components, then ```jQuery``` is required. The dependency ```what-input``` is optional, but recommended for better accessibility.
+You also should initialize the components just before closing the body:
+
+```
+<script>
+    $(document).foundation();
+</script>
+```
+
+For more information, see the [Foundation for Sites documentation](http://foundation.zurb.com/sites/docs/javascript.html).
 
 ## Custom settings
 

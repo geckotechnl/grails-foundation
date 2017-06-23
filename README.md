@@ -16,7 +16,17 @@ Install by adding the plugin to ```BuildConfig.groovy```:
 plugins {
   // plugins for the compile step
   /* other plugins */
-  compile ":foundation-sites:6.3.1"
+  compile ":foundation-sites:6.3.1.1"
+}
+```
+
+To support compilation of ES6 used in Foundation, for partial includes, you must add the following to ```Config.groovy```:
+
+```groovy
+grails {
+    assets {
+        minifyOptions = [languageMode: 'ES6', targetLanguage: 'ES5']
+    }
 }
 ```
 
@@ -76,4 +86,11 @@ Modify this file in your local project to customize any settings.
 
 ## Versioning
 
-The plugin follows the same versioning as Foundation.
+The plugin follows the same versioning as Foundation, but may append a "patch" version for patches to the plugin unrelated to Foundation upgrades.
+
+## Release history
+
+|version|date|notes|
+|---|---|---|
+|6.3.1.1|2017-06-23|Fixed release, include assets.|
+|6.3.1|2017-05-02|Broken initial release. Missing assets.|

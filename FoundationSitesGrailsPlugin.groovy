@@ -1,6 +1,6 @@
 class FoundationSitesGrailsPlugin {
     // the plugin version
-    def version = "6.3.1"
+    def version = "6.3.1.1"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.4 > *"
     // resources that are excluded from plugin packaging
@@ -16,9 +16,7 @@ class FoundationSitesGrailsPlugin {
         "grails-app/assets/**/package.json",
         "grails-app/assets/**/yarn.lock",
         "grails-app/assets/stylesheets/vendor/foundation-sites/.github",
-        "grails-app/assets/stylesheets/vendor/foundation-sites/assets/**",
         "grails-app/assets/stylesheets/vendor/foundation-sites/customizer/**",
-        "grails-app/assets/stylesheets/vendor/foundation-sites/dist/**",
         "grails-app/assets/stylesheets/vendor/foundation-sites/.eslintrc",
         "grails-app/assets/stylesheets/vendor/foundation-sites/.sass-lint.yml",
         "grails-app/assets/stylesheets/vendor/foundation-sites/browserstack.json",
@@ -26,7 +24,6 @@ class FoundationSitesGrailsPlugin {
         "grails-app/assets/stylesheets/vendor/foundation-sites/docslink.sh",
         "grails-app/assets/stylesheets/vendor/jquery/external/**",
         "grails-app/assets/stylesheets/vendor/jquery/src/**",
-        "grails-app/assets/stylesheets/vendor/motion-ui/dist/**",
         "grails-app/assets/stylesheets/vendor/motion-ui/docs/**",
         "grails-app/assets/stylesheets/vendor/motion-ui/lib/**",
         "grails-app/assets/stylesheets/vendor/what-input/src/**",
@@ -41,7 +38,7 @@ class FoundationSitesGrailsPlugin {
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/foundation-sites"
+    def documentation = "https://github.com/geckotechnl/grails-foundation/tree/2.x#grails-foundation-sites-plugin"
 
     // Extra (optional) plugin metadata
 

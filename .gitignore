@@ -33,3 +33,4 @@ target
 /.idea/
 /grails-test-suite-uber/configured/
 plugin.xml
+.slcache/

@@ -4,10 +4,14 @@ pluginAssetsDir = "$foundationSitesPluginDir/grails-app/assets"
 appAssetsDir = "$basedir/grails-app/assets"
 overwriteAll = false
 
-target(foundationSettings: "Copies the _settings.scss file into the local project directory to customize Foundation.") {
+target(foundationConfigurable: "Copies the foundation files into the local project directory to fully configure Foundation components.") {
+    final String FOUNDATION_ASSETS = 'stylesheets/vendor/foundation-sites/assets/foundation.scss'
+    final String FOUNDATION_LOCATION = 'stylesheets/vendor/foundation-sites/scss/foundation.scss'
     final String SETTINGS_LOCATION = 'stylesheets/vendor/foundation-sites/scss/settings/_settings.scss'
+    copyAsset(FOUNDATION_ASSETS)
+    copyAsset(FOUNDATION_LOCATION)
     copyAsset(SETTINGS_LOCATION)
-    event('StatusUpdate', ["Copied $SETTINGS_LOCATION into project."])
+    event('StatusUpdate', ["Copied $FOUNDATION_ASSETS, $FOUNDATION_LOCATION and $SETTINGS_LOCATION into project."])
 }
 
 
@@ -38,4 +42,4 @@ checkOverwrite = { String dest, String action ->
     return true
 }
 
-setDefaultTarget(foundationSettings)
+setDefaultTarget(foundationConfigurable)

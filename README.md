@@ -73,7 +73,7 @@ Foundation's default settings can be overridden by customizing the SCSS settings
 To install this file in your local project, run the script:
 
 ```
-grails foundation-settings
+grails foundation-configure
 ```
 
 The settings file will be copied to:
